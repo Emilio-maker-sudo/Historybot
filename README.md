@@ -14,6 +14,12 @@ Este proyecto permite crear shorts automáticos para YouTube a partir de un vide
    git clone https://github.com/Emilio-maker-sudo/Historybot.git
 
 ## Instala las dependencias:
+Para esto necesitas moverte dentro de la carpeta creada de tu repositorio (Historybot) a través del siguiente comando:
+```bash
+   cd C:\Users\LaDirecciónDondeLoGuardaste\Historybot\
+```
+
+Y dentro de esa dirección ejecutar:
 ```bash
    pip install -r requirements.txt
 ```
