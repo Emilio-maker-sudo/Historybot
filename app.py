@@ -11,14 +11,25 @@ from pydub import silence
 from PIL import Image, ImageDraw, ImageFont
 from openai import OpenAI
 from elevenlabs import generate, save, set_api_key
+from dotenv import load_dotenv
+
+# Cargar variables del entorno
+load_dotenv()
 
 # Configuración inicial
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Configurar API Keys
-ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+# Acceder a las claves
+from dotenv import load_dotenv
+load_dotenv()  # Cargar variables del entorno
+
+ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")  # Leer desde .env
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# Verificar claves
+if not ELEVENLABS_API_KEY or not OPENAI_API_KEY:
+    raise ValueError("Faltan API Keys en el archivo .env")
 set_api_key(ELEVENLABS_API_KEY)
 
 # Directorios para recursos
