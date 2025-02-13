@@ -12,3 +12,26 @@ Este proyecto permite crear shorts automáticos para YouTube a partir de un vide
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu_usuario/tu_repositorio.git
+
+## Instala las dependencias:
+```bash
+   pip install -r requirements.txt
+```
+### **Paso 2: Ejecución del Bot**
+1. Asegúrate de tener todas las dependencias instaladas.
+2. Coloca los archivos de efectos de sonido en `sfx/` y la música en `music/`.
+3. Configura las API Keys en `app.py`.
+4. Ejecuta el bot con:
+   ```bash
+   python app.py
+   
+### **Paso 3: Gredio**
+Accede a la interfaz de Gradio en tu navegador (generalmente en http://127.0.0.1:7860)
+
+
+### **Paso 5: Personalización
+Efectos de sonido: Puedes agregar más efectos a la carpeta sfx/ y actualizar el mapeo en el código.
+
+Música de fondo: Agrega más pistas a music/ y el bot las seleccionará aleatoriamente.
+
+Fuentes: Cambia font.ttf por cualquier otra fuente que prefieras.
