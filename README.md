@@ -11,7 +11,7 @@ Este proyecto permite crear shorts automáticos para YouTube a partir de un vide
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Emilio-maker-sudo/Historybot.git
 
 ## Instala las dependencias:
 ```bash
